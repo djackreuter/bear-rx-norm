@@ -5,6 +5,7 @@ CREATE TABLE ndc_products (
   product_ndc VARCHAR,
   product_type_name VARCHAR,
   proprietary_name VARCHAR,
+  proprietary_name_suffix VARCHAR,  
   non_proprietary_name VARCHAR,
   dosage_form_name VARCHAR,
   route_name VARCHAR,
@@ -15,12 +16,11 @@ CREATE TABLE ndc_products (
   labeler_name VARCHAR,
   substance_name VARCHAR,
   active_numerator_strength VARCHAR,
+  active_ingred_unit VARCHAR,
   pharm_classes VARCHAR,
   dea_schedule VARCHAR,
   ndc_exclude_flag VARCHAR,
   listing_record_certified_through VARCHAR,
-  active_ingred_unit VARCHAR,
-  proprietary_name_suffix VARCHAR,  
   created_at TIMESTAMP,
   updated_at TIMESTAMP
 );
