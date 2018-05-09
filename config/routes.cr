@@ -22,8 +22,8 @@ Amber::Server.configure do |app|
     plug Amber::Pipe::Static.new("./public")
   end
 
-  routes :web do
-    get "/", HomeController, :index
+  routes :web do      
+    get "/", DrugsController, :index
   end
 
   routes :static do
