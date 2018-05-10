@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    render("index.ecr")
+    render "index.html.ecr"
   end
 end
 
