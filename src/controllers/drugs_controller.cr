@@ -1,5 +1,5 @@
 class DrugsController < ApplicationController
   def index
-    render("home/index.ecr")
+    render "home/index"
   end
 end
