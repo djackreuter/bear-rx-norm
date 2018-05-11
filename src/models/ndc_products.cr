@@ -27,6 +27,6 @@ class NdcProducts < Granite::ORM::Base
   timestamps
 
   def self.search(search)
-    all("WHERE proprietary_name LIKE ?", "%#{search}%")
+    all("WHERE proprietary_name LIKE ?", "%{search}%")
   end
 end
