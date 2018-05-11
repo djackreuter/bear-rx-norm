@@ -25,4 +25,8 @@ class NdcProducts < Granite::ORM::Base
   field ndc_exclude_flag : String
   field listing_record_certified_through : String
   timestamps
+
+  def self.search(search)
+    all("WHERE proprietary_name LIKE ?", "%#{search}%")
+  end
 end
