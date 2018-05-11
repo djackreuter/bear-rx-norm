@@ -13,3 +13,13 @@
     </form>
   </div>
 </div>
+
+<div class="row">
+  <%- if !@drugs.nil %>
+    <ul>
+      <%- @drugs.each do |drug| %>
+        <li><%= drug.proprietary_name %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
