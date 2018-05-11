@@ -24,6 +24,7 @@ Amber::Server.configure do |app|
 
   routes :web do      
     get "/", HomeController, :index
+    get "/drugs", DrugsController, :index
   end
 
   routes :static do
