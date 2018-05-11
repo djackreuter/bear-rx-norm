@@ -5,10 +5,10 @@ class DrugsController < ApplicationController
       required(:search, "Search something") { |_| true } 
     end
     if valid_params[:search]
-      drugs = NdcProducts.search(params[:search])
+      drugs = NdcProducts.search(valid_params[:search].capitalize)
     else
       flash[:notice] = "Could not find that drug."
-      redirect_to("/drugs")
+      redirect_to("/")
     end
   end
 end
